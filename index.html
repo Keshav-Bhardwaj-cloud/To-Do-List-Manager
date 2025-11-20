@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>To DO List</title>
+</head>
+<body>
+    <div class="header">
+    <h1 class="Heading">To DO List</h1>
+</div>
+
+<div class="main">
+    <div class="sidebar">
+        <h3 class="Projects">Projects</h3>
+        <button class="AddProject">Add Project</button>
+
+        <dialog class="ProjectDescription">
+            <form method="dialog" class="DialogForm">
+                <div class="projectDetails">
+                    <label for="project-name">Project Name:</label>
+                    <input type="text" id="project-name">
+
+                    <label for="description">Description:</label>
+                    <textarea id="description" rows="4"></textarea>
+                </div>
+
+                <menu class="Buttons">
+                    <button class="cancel">Cancel</button>
+                    <button class="confirm">Add Project</button>
+                </menu>
+            </form>
+        </dialog>
+
+        <div class="ProjectContainer"></div>
+    </div>
+
+    <div class="MainContent">
+        <div class="MainProjectContainer">
+            <div class="ProjectTitle"></div>
+            <h2>To DO List</h2>
+            <div class="Todolist"></div>
+
+            <button class="AddTaskBtn">Add Task</button>
+
+            <dialog class="TaskDescription">
+                <form method="dialog" class="TaskInfo">
+                    <label>Enter task name:</label>
+                    <input type="text" id="TaskName">
+
+                    <menu class="TaskButton">
+                        <button class="submitTask">Add Task</button>
+                        <button class="cancelTask">Cancel</button>
+                    </menu>
+                </form>
+            </dialog>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p class="footer-text">© 2024 To DO List App</p>
+</div>
+    <script type="module" src="jsfile/script.js"></script>
+</body>
+</html>
